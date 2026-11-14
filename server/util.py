@@ -54,8 +54,8 @@ def get_estimated_price(location, sqft, bhk, bath):
 
     if loc_index >= 0:
         input_data[loc_index] = 1
-
-    return round(__model.predict([input_data])[0], 2)
+    prediction = __model.predict([input_data])[0]
+    return round(float(prediction), 2)
 
 
 if __name__ == "__main__":

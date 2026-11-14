@@ -1,8 +1,11 @@
 
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import util
 
 app = Flask(__name__)
+
+CORS(app)
 
 # Load saved model and artifacts
 util.load_saved_artifacts()

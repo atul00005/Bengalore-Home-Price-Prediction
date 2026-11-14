@@ -2,5 +2,5 @@ Flask
 Flask-Cors
 numpy
 pandas
-scikit-learn
-gunicorn
+scikit-learn=1.9.1
+gunicorni
